@@ -6,7 +6,7 @@ import FireStoreUsersPage from './Pages/FireStoreExamples/FireStoreUsersPage';
 import FireStoreGamesPage from './Pages/FireStoreExamples/FireStoreGamesPage';
 import FireStoreListingsPage from './Pages/FireStoreExamples/FireStoreListingsPage';
 import { AppState } from './context';
-import { BrowserRouter, Route } from 'react-router-dom';
+
 
 function App() {
   const appState = useContext(AppState);
