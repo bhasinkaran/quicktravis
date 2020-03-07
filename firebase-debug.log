@@ -1,0 +1,55 @@
+[debug] [2020-03-07T02:17:24.698Z] ----------------------------------------------------------------------
+[debug] [2020-03-07T02:17:24.700Z] Command:       /Users/karanbhasin/.nvm/versions/node/v13.9.0/bin/node /Users/karanbhasin/.nvm/versions/node/v13.9.0/bin/firebase init
+[debug] [2020-03-07T02:17:24.700Z] CLI Version:   7.14.0
+[debug] [2020-03-07T02:17:24.700Z] Platform:      darwin
+[debug] [2020-03-07T02:17:24.700Z] Node Version:  v13.9.0
+[debug] [2020-03-07T02:17:24.701Z] Time:          Fri Mar 06 2020 20:17:24 GMT-0600 (Central Standard Time)
+[debug] [2020-03-07T02:17:24.701Z] ----------------------------------------------------------------------
+[debug] [2020-03-07T02:17:24.701Z] 
+[debug] [2020-03-07T02:17:24.707Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-03-07T02:17:24.707Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/karanbhasin/Desktop/PlayerToo-master
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using playertoo-43706.
+[debug] [2020-03-07T02:17:27.220Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/playertoo-43706  
+ 
+[debug] [2020-03-07T02:17:27.432Z] <<< HTTP RESPONSE 403
+[debug] [2020-03-07T02:17:27.432Z] <<< HTTP RESPONSE BODY
+[debug] [2020-03-07T02:17:27.433Z] HTTP Error: 403, The caller does not have permission
+[debug] [2020-03-07T02:17:27.477Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (/Users/karanbhasin/.nvm/versions/node/v13.9.0/lib/node_modules/firebase-tools/lib/responseToError.js:38:12)
+    at Request._callback (/Users/karanbhasin/.nvm/versions/node/v13.9.0/lib/node_modules/firebase-tools/lib/api.js:39:35)
+    at Request.self.callback (/Users/karanbhasin/.nvm/versions/node/v13.9.0/lib/node_modules/firebase-tools/node_modules/request/request.js:185:22)
+    at Request.emit (events.js:321:20)
+    at Request.EventEmitter.emit (domain.js:485:12)
+    at Request.<anonymous> (/Users/karanbhasin/.nvm/versions/node/v13.9.0/lib/node_modules/firebase-tools/node_modules/request/request.js:1154:10)
+    at Request.emit (events.js:321:20)
+    at Request.EventEmitter.emit (domain.js:485:12)
+    at IncomingMessage.<anonymous> (/Users/karanbhasin/.nvm/versions/node/v13.9.0/lib/node_modules/firebase-tools/node_modules/request/request.js:1076:12)
+    at Object.onceWrapper (events.js:427:28)
+    at IncomingMessage.emit (events.js:333:22)
+    at IncomingMessage.EventEmitter.emit (domain.js:485:12)
+    at endReadableNT (_stream_readable.js:1201:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+[error] 
+[error] Error: Failed to get Firebase project playertoo-43706. Please make sure the project exists and your account has permission to access it.
